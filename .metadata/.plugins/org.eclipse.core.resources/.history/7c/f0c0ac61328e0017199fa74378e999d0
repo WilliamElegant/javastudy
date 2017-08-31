@@ -1,0 +1,11 @@
+package org.cn.william.interfacenature;
+
+public class Point implements MyComparable {
+
+	@Override
+	public int compareTo(Object other) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

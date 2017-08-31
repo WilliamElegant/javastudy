@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1503651479959_1" label="vnfmarket" name="vnfmarket">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/vnf-sdk-marketplace-deployment" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/vnf-sdk-marketplace" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/vnfmarket-docker" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/vnfmarket" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/vnfmarket-deployment" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/vnf-sdk-marketplace-core-parent" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1504150579637_2" label="vnfsdk-functest-core-parent" name="vnfsdk-functest-core-parent"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1504151408157_3" label="vnf-sdk-validate-lc-test" name="vnf-sdk-validate-lc-test">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lifecycle-test-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lifecycle-test-deployment" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/vnf-sdk-validate-lc-test" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1502356995153_0" label="Window Working Set" name="Aggregate for window 1502356995153"/>
+</workingSetManager>

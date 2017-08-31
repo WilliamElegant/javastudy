@@ -1,0 +1,138 @@
+2017-08-10 17:23:21,296 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2017-08-18 13:24:58,394 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2017-08-25 11:46:38,383 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2017-08-25 16:58:03,635 [Worker-80] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.open-o.org/content/repositories/public/org/onap/oparent/oparent/1.0.0-SNAPSHOT/maven-metadata.xml
+2017-08-25 16:58:05,369 [Worker-80] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.open-o.org/content/repositories/public/org/onap/oparent/oparent/1.0.0-SNAPSHOT/oparent-1.0.0-SNAPSHOT.pom
+2017-08-25 16:58:05,501 [Worker-80] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 6 project(s) in 5 sec
+2017-08-25 16:58:26,848 [Worker-88] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for org.onap.vnfsdk.refrepo:vnfmarket-docker:[unknown-version]
+[FATAL] Non-resolvable parent POM for org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT: Could not find artifact org.onap.oparent:oparent:pom:1.0.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT, E:\work\code\onap\refrepo\vnfmarket-be\pom.xml, line 18, column 12
+ for project org.onap.vnfsdk.refrepo:vnfmarket-docker:[unknown-version] at E:\work\code\onap\refrepo\vnfmarket-be\deployment\docker\pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for org.onap.vnfsdk.refrepo:vnfmarket-docker:[unknown-version]
+[FATAL] Non-resolvable parent POM for org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT: Could not find artifact org.onap.oparent:oparent:pom:1.0.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT, E:\work\code\onap\refrepo\vnfmarket-be\pom.xml, line 18, column 12
+ for project org.onap.vnfsdk.refrepo:vnfmarket-docker:[unknown-version] at E:\work\code\onap\refrepo\vnfmarket-be\deployment\docker\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.9.jar:3.3.9]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:816) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:967) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:192) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:732) [org.eclipse.m2e.editor_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1053) [org.eclipse.m2e.editor_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for org.onap.vnfsdk.refrepo:vnfmarket-docker:[unknown-version]
+[FATAL] Non-resolvable parent POM for org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT: Could not find artifact org.onap.oparent:oparent:pom:1.0.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT, E:\work\code\onap\refrepo\vnfmarket-be\pom.xml, line 18, column 12
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1029) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:800) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:329) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.9.jar:3.3.9]
+	... 15 common frames omitted
+2017-08-25 16:59:46,666 [Worker-82] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for org.onap.vnfsdk.refrepo:vnfmarket-deployment:1.0.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT: Could not find artifact org.onap.oparent:oparent:pom:1.0.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT, E:\work\code\onap\refrepo\vnfmarket-be\pom.xml, line 18, column 12
+ for project org.onap.vnfsdk.refrepo:vnfmarket-deployment:1.0.0-SNAPSHOT at E:\work\code\onap\refrepo\vnfmarket-be\deployment\pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for org.onap.vnfsdk.refrepo:vnfmarket-deployment:1.0.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT: Could not find artifact org.onap.oparent:oparent:pom:1.0.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT, E:\work\code\onap\refrepo\vnfmarket-be\pom.xml, line 18, column 12
+ for project org.onap.vnfsdk.refrepo:vnfmarket-deployment:1.0.0-SNAPSHOT at E:\work\code\onap\refrepo\vnfmarket-be\deployment\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.9.jar:3.3.9]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:816) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:967) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:192) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:732) [org.eclipse.m2e.editor_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1053) [org.eclipse.m2e.editor_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for org.onap.vnfsdk.refrepo:vnfmarket-deployment:1.0.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT: Could not find artifact org.onap.oparent:oparent:pom:1.0.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT, E:\work\code\onap\refrepo\vnfmarket-be\pom.xml, line 18, column 12
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1029) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:800) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:329) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.9.jar:3.3.9]
+	... 15 common frames omitted
+2017-08-25 17:08:44,755 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-08-25 17:08:45,040 [Worker-0] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for org.onap.vnfsdk.refrepo:vnfmarket-docker:[unknown-version]
+[FATAL] Non-resolvable parent POM for org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT: Could not find artifact org.onap.oparent:oparent:pom:1.0.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT, E:\work\code\onap\refrepo\vnfmarket-be\pom.xml, line 18, column 12
+ for project org.onap.vnfsdk.refrepo:vnfmarket-docker:[unknown-version] at E:\work\code\onap\refrepo\vnfmarket-be\deployment\docker\pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for org.onap.vnfsdk.refrepo:vnfmarket-docker:[unknown-version]
+[FATAL] Non-resolvable parent POM for org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT: Could not find artifact org.onap.oparent:oparent:pom:1.0.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT, E:\work\code\onap\refrepo\vnfmarket-be\pom.xml, line 18, column 12
+ for project org.onap.vnfsdk.refrepo:vnfmarket-docker:[unknown-version] at E:\work\code\onap\refrepo\vnfmarket-be\deployment\docker\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.9.jar:3.3.9]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:816) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:967) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:192) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:732) [org.eclipse.m2e.editor_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1053) [org.eclipse.m2e.editor_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for org.onap.vnfsdk.refrepo:vnfmarket-docker:[unknown-version]
+[FATAL] Non-resolvable parent POM for org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT: Could not find artifact org.onap.oparent:oparent:pom:1.0.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ org.onap.vnfsdk.refrepo:vnf-sdk-marketplace-core-parent:1.0.0-SNAPSHOT, E:\work\code\onap\refrepo\vnfmarket-be\pom.xml, line 18, column 12
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1029) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:800) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:329) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.9.jar:3.3.9]
+	... 15 common frames omitted
+2017-08-29 11:33:11,454 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-08-30 08:28:43,503 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-08-31 09:21:53,681 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-08-31 11:36:19,980 [Worker-29] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 4 project(s) in 0 sec
+2017-08-31 11:39:53,454 [Worker-48] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version]
+[FATAL] Non-resolvable parent POM for org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version]: Could not find artifact org.onap.oparent:oparent:pom:1.0.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 19, column 11
+ for project org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version] at E:\work\code\onap\functest\pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version]
+[FATAL] Non-resolvable parent POM for org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version]: Could not find artifact org.onap.oparent:oparent:pom:1.0.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 19, column 11
+ for project org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version] at E:\work\code\onap\functest\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.9.jar:3.3.9]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:816) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:967) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:192) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:732) [org.eclipse.m2e.editor_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1053) [org.eclipse.m2e.editor_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version]
+[FATAL] Non-resolvable parent POM for org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version]: Could not find artifact org.onap.oparent:oparent:pom:1.0.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 19, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1029) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:800) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:329) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.9.jar:3.3.9]
+	... 15 common frames omitted
+2017-08-31 11:43:08,571 [Worker-49] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 6 project(s) in 0 sec
+2017-08-31 11:44:01,039 [Worker-49] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2017-08-31 11:50:08,322 [Worker-29] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 3 project(s) in 0 sec
