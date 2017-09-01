@@ -1,0 +1,7 @@
+package org.cn.william.interfacenature;
+
+
+public interface Shape{
+	public double area(double length, double width);
+	public int compareTo(Object other);
+}

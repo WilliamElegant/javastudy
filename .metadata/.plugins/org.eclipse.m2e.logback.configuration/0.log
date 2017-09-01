@@ -136,3 +136,36 @@ Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was
 2017-08-31 11:43:08,571 [Worker-49] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 6 project(s) in 0 sec
 2017-08-31 11:44:01,039 [Worker-49] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
 2017-08-31 11:50:08,322 [Worker-29] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 3 project(s) in 0 sec
+2017-08-31 17:47:51,886 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-08-31 17:47:52,116 [Worker-2] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version]
+[FATAL] Non-resolvable parent POM for org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version]: Could not find artifact org.onap.oparent:oparent:pom:1.0.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 19, column 11
+ for project org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version] at E:\work\code\onap\functest\pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version]
+[FATAL] Non-resolvable parent POM for org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version]: Could not find artifact org.onap.oparent:oparent:pom:1.0.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 19, column 11
+ for project org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version] at E:\work\code\onap\functest\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.9.jar:3.3.9]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:816) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:967) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:192) ~[org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:732) [org.eclipse.m2e.editor_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1053) [org.eclipse.m2e.editor_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version]
+[FATAL] Non-resolvable parent POM for org.onap.vnf-sdk.function-test:vnfsdk-functest-core-parent:[unknown-version]: Could not find artifact org.onap.oparent:oparent:pom:1.0.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 19, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1029) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:800) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:329) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.9.jar:3.3.9]
+	... 15 common frames omitted
+2017-09-01 09:46:47,233 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
